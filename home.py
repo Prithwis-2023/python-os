@@ -40,13 +40,13 @@ jls_extract_var = input
 select = jls_extract_var(":")
 if select == '1':
     jls_extract_var = "brows.py"
-    os.startfile(jls_extract_var)
+    os.system('python {}'.format(jls_extract_var))
     jls_extract_var = "home.py"
     os.startfile(jls_extract_var)
     exit()
 if select == '2':
-    jls_extract_var = "textediter.py"
-    os.startfile(jls_extract_var)
+    jls_extract_var = "texteditor.py"
+	os.system('python {}'.format(jls_extract_var))
     jls_extract_var = "home.py"
     os.startfile(jls_extract_var)
     exit()
