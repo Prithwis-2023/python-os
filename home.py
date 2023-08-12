@@ -38,24 +38,28 @@ jls_extract_var = """
 print(jls_extract_var)
 jls_extract_var = input
 select = jls_extract_var(":")
+
 if select == '1':
     jls_extract_var = "brows.py"
     os.system('python {}'.format(jls_extract_var))
     jls_extract_var = "home.py"
     os.startfile(jls_extract_var)
     exit()
+    
 if select == '2':
     jls_extract_var = "texteditor.py"
-	os.system('python {}'.format(jls_extract_var))
+    os.system('python {}'.format(jls_extract_var))
     jls_extract_var = "home.py"
     os.startfile(jls_extract_var)
     exit()
+
 if select == '3':
     jls_extract_var = "photos.py"
-    os.startfile(jls_extract_var)
+    os.system('python {}'.format(jls_extract_var))
     jls_extract_var = "home.py"
     os.startfile(jls_extract_var)
     exit()
+    
 if select == '4':
 		b_login = input(str("Please Enter The Password To " + l_n + "To Open BioS: "))
 		if b_login == l_p:
@@ -86,17 +90,21 @@ if select == '4':
 				os.startfile('home.py')
 				os.system('exit')
 exit()
+
 if select == '5':
 	os.startfile('home.py')
 	os.startfile('terminal.py')
 exit()
+
 if select == '6':
 	os.startfile('home.py')
 	os.startfile('calc.py')
 exit()
+
 if select == '7':
     os.startfile('home.py')
     os.startfile('fileexplorer.py')
+    
 if select == '8':
 	os.system('exit')
 input()
